@@ -1,8 +1,9 @@
-document.addEventListener('DOMContentLoaded', function(){
+document.addEventListener('DOMContentLoaded', function() {
   const navSvg = document.getElementById('nav-svg');
-  const navLinks = document.getElementsByClassName('nav-links');
+  // Target the 'nav' element inside '.nav-links'
+  const navContainer = document.querySelector('.nav-links nav');
 
-  navSvg.addEventListener('click', function(){
-    navLinks.classList.toggle('active');
+  navSvg.addEventListener('click', function() {
+    navContainer.classList.toggle('active');
   });
 });

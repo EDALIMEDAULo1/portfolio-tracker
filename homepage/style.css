@@ -148,7 +148,7 @@ header h1{
  }
 
  @media screen and (max-width: 768px){
-  header h1{
+  /* header h1{
     font-size: 25px;
   }
 
@@ -167,6 +167,36 @@ header h1{
 
   .logo p{
     font-size: 13px;
+  } */
+
+   .nav-links nav {
+    display: none; 
+    flex-direction: column;
+    position: absolute;
+    top: 70px; /* Adjust based on your nav height */
+    right: 0;
+    background-color: rgb(149, 155, 181);
+    width: 200px;
+    padding: 20px;
+    z-index: 100;
   }
 
+  /* 2. This is the "stick" class that JS will trigger */
+  .nav-links nav.active {
+    display: flex;
+  }
+
+  /* 3. Make sure the links inside are visible when active */
+  .nav-links a {
+    display: block; 
+    padding: 10px 0;
+  }
+
+  #nav-svg {
+    display: block;
+    cursor: pointer;
+    padding-left: 110px;
+    margin-top: 2px;
+    /* Removed large padding-left to keep it on the right naturally */
+  }
  }
