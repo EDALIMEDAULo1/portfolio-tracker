@@ -2,6 +2,10 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  /* background-color: rgb(10, 17, 35); */
+}
+
+body{
   background-color: rgb(10, 17, 35);
 }
 
@@ -9,37 +13,141 @@ p{
   color: khaki;
 }
 
-header{
+header h1{
   text-align: center;
   color: khaki;
   padding: 35px;
-  font-size: 35px;
+  font-size: 60px;
   padding-bottom: 100px;
 }
 
-.cards{
+.nav-bar{
+  display: flex;
+  font-size: 15px;
+  justify-content: space-between;
+  background-color: rgb(149, 155, 181);
+  padding: 30px;
+}
+
+.logo p{
+  padding-left: 30px;
+  color: rgb(10, 17, 35);
+  font-size: 20px;
+}
+
+.logo p:hover{
+  color: khaki;
+}
+
+.nav-links nav{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding-right: 30px;
+}
+
+.nav-links a{
+  text-decoration: none;
+  color: rgb(10, 17, 35);
+  font-size: 20px;
+}
+
+.nav-links a:hover{
+  color: khaki;
+}
+
+.cards {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap; 
+  gap: 20px;
 }
 
-.card1, .card2, .card3, .card4{
-  position: relative;
-}
-
-.card1 p, .card2 p, .card3 p, .card4 p{
+.card {
   background-color: rgb(149, 155, 181);
   height: 300px;
   width: 300px;
   border-radius: 20px;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding-top: 20px;
+  padding: 20px;
+}
+
+.card:hover{
+  background-color: khaki;
+}
+
+.card p {
+  font-size: 22px;
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+  color: rgb(10, 17, 35);
+}
+
+.card i {
+  font-size: 70px;
+  color: rgb(10, 17, 35);
+}
+
+.build-mode button{
+  /* margin: 0 auto; */
+  padding: 35px;
+  background-color: khaki;
+  color: rgb(10, 17, 35);
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 15px;
+  margin-top: 40px;
   font-size: 20px;
 }
 
-.fa-calendar-days{
+.build-mode button:hover{
+  background-color: rgb(149, 155, 181);
+}
+
+/* .build-mode{
+  margin: 0 690px;
+} */
+ main{
   display: flex;
   flex-direction: column;
-  font-size: 80px;
+  align-items: center;
+ }
+
+ footer{
+  display: flex;
+  justify-content: right;
+  gap: 40px;
+  padding-top: 100px;
+  text-align: right;
+  padding-right: 10px;
+ }
+
+ footer a{
   color: khaki;
-  position: absolute;
-}
+  text-decoration: none;
+ }
+
+ @media screen and (max-width: 768px){
+  header h1{
+    font-size: 25px;
+  }
+
+  .nav-bar{
+    padding: 20px;
+  }
+
+  .nav-links a{
+    display: none;
+  }
+
+  .logo p{
+    font-size: 13px;
+  }
+
+ }
