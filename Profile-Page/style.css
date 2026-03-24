@@ -66,3 +66,180 @@ body {
 #nav-svg {
   display: none;
 }
+
+/* .profile-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(240, 230, 140, 0.2);
+  width: 600px;
+  height: 500px;
+  text-align: center;
+  margin: 110px auto;
+  border-radius: 20px;
+}
+
+.profile-title{
+  color: khaki;
+  padding-bottom: 30px;
+}
+
+.google-btn{
+  padding: 20px;
+  border-radius: 11px;
+}
+
+.input-group{
+  padding: 10px;
+  border-radius: 11px;
+}
+
+#password{
+  padding: 15px;
+  border-radius: 11px;
+  text-align: center;
+}
+
+#email{
+  padding: 15px;
+  border-radius: 11px;
+  text-align: center;
+}
+
+.pro-btn{
+  padding: 15px;
+  border-radius: 11px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.form-footer a{
+  text-decoration: none;
+  color: white;
+} */
+
+/* Profile Page Specific Styles */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 40px 20px;
+}
+
+.auth-card {
+  background-color: rgba(149, 155, 181, 0.1);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 40px;
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+}
+
+.profile-title {
+  color: khaki;
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #bdc3c7;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+/* Google Button */
+.google-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: 0.3s;
+}
+
+.google-btn:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* Divider line */
+.divider {
+  margin: 25px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  line-height: 0.1em;
+}
+
+.divider span {
+  background: rgb(10, 17, 35); /* Match body color */
+  padding: 0 10px;
+  color: #666;
+  font-size: 12px;
+}
+
+/* Form Layout */
+.input-group {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 14px;
+  color: khaki;
+  margin-bottom: 8px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
+  outline: none;
+}
+
+.input-group input:focus {
+  border-color: khaki;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: #bdc3c7;
+  margin-bottom: 25px;
+}
+
+.signup-btn {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.logs-info {
+  font-size: 12px;
+  color: #7f8c8d;
+  margin-bottom: 20px;
+}
+
+.form-footer {
+  font-size: 14px;
+  color: #bdc3c7;
+}
+
+.form-footer a {
+  color: khaki;
+  text-decoration: none;
+  font-weight: bold;
+}
